@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code & Character | Rahiya Kouser</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="visitor-gate" class="gate-overlay">
+        <div class="gate-content">
+            <h1 class="main-title">Code & Character</h1>
+            <p class="sub-title">A Digital Study of Rahiya Kouser</p>
+            
+            <form id="gate-form" class="ollivere-form">
+                <div class="input-group">
+                    <input type="text" id="visitor-name" placeholder="Full Name" required>
+                    <input type="tel" id="visitor-phone" placeholder="Phone Number" required>
+                    <input type="email" id="visitor-email" placeholder="Email Address" required>
+                </div>
+                <button type="submit" class="enter-btn">Enter the Study</button>
+            </form>
+            
+            <p class="tagline">Great Design. No Nonsense.</p>
+        </div>
+    </div>
+
+    <div id="main-content" style="display:none;">
+        
+        <header class="main-page-header reveal-text">
+            <h1 class="brand-title">Code & Character</h1>
+            <p class="brand-subtitle">A Digital Study of Rahiya Kouser</p>
+            <div class="student-meta">
+                <span>Reg No: 25BCAC51</span> • 
+                <span>BCA Student</span> • 
+                <span>Bengaluru</span>
+            </div>
+        </header>
+
+        <section class="about-section">
+            <h2 class="section-heading reveal-text" style="animation-delay: 0.2s;">About Me</h2>
+            <p class="bio-text reveal-text" style="animation-delay: 0.4s;">
+                I am <strong>Rahiya Kouser</strong>, a second-semester BCA student at Kristu Jayanti University with a deep curiosity for how technology shapes our world. As a fast learner and a dedicated problem-solver, I strive to build applications that are as functional as they are aesthetic.
+
+                My approach to growth extends beyond the screen; I find my balance on the badminton court, where agility and strategy are key, and in the quiet pages of a good book, which keeps my perspective broad and my mind constantly questioning. For me, technology is more than a career—it's a canvas for continuous learning.
+            </p>
+        </section>
+
+        <section class="academic-section">
+            <h2 class="section-heading reveal-text" style="animation-delay: 0.6s;">Academic Journey</h2>
+            <div class="academic-content">
+                <p class="bio-text reveal-text" style="animation-delay: 0.8s;">
+                    My academic path began with a strong grounding at <strong>Huda National School</strong> and <strong>HMR National PU College</strong>. 
+                </p>
+                <p class="bio-text reveal-text" style="animation-delay: 1.0s;">
+                    Currently, as a <strong>second-semester BCA student at Kristu Jayanti Deemed to be University</strong>, I am transforming that fascination into expertise. This environment has been a catalyst for my growth, pushing me to look beyond syntax and understand the architecture of software. Through rigorous coursework and collaborative projects, I have cultivated a mindset that thrives on complexity and a commitment to staying at the forefront of the technology landscape in <strong>Bengaluru</strong>.
+                </p>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2 class="section-heading reveal-text" style="animation-delay: 1.2s;">Skills & Certifications</h2>
+            <div class="certificate-grid reveal-text" style="animation-delay: 1.4s;">
+                
+                <div class="cert-card" onclick="openCert('mongodb-cert.pdf')">
+                    <div class="cert-image-container"><img src="mongodb.png" alt="MongoDB" class="cert-logo"></div>
+                    <h3>Database Management</h3>
+                    <p>MongoDB Admin Path</p>
+                </div>
+
+                <div class="cert-card" onclick="openCert('frontend-cert.pdf')">
+                    <div class="cert-image-container"><img src="frontend.png" alt="Frontend" class="cert-logo"></div>
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JS Specialist</p>
+                </div>
+
+                <div class="cert-card" onclick="openCert('node-cert.pdf')">
+                    <div class="cert-image-container"><img src="node.png" alt="Node.js" class="cert-logo"></div>
+                    <h3>Backend Logic</h3>
+                    <p>Server-side Architecture</p>
+                </div>
+
+                <div class="cert-card" onclick="openCert('git-cert.pdf')">
+                    <div class="cert-image-container"><img src="git.png" alt="Git" class="cert-logo"></div>
+                    <h3>Version Control</h3>
+                    <p>Collaborative Workflow</p>
+                </div>
+
+            </div>
+        </section>
+
+        <div id="cert-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeCert()">&times;</span>
+                <iframe id="cert-viewer" src="" width="100%" height="500px"></iframe>
+            </div>
+        </div>
+
+        <section class="goals-section">
+            <h2 class="section-heading reveal-text" style="animation-delay: 1.2s;">Future Goals</h2>
+            <p class="bio-text reveal-text" style="animation-delay: 1.4s;">
+                My immediate goal is to master the full-stack ecosystem, bridging the gap between elegant front-end design and robust back-end logic. Long-term, I aim to contribute to projects that leverage technology for social impact, particularly in the realms of education and accessible software.
+            </p>
+        </section>
+
+        <footer class="contact-section reveal-text" style="animation-delay: 1.6s;">
+            <div class="contact-container">
+                <h2 class="section-heading">Share Your Thoughts</h2>
+                <form id="contact-form" class="ollivere-form">
+                    <textarea id="contact-message" placeholder="Your review or opinion..." rows="5" required></textarea>
+                    <button type="submit" class="enter-btn">Submit Review</button>
+                </form>
+                
+                <div class="personal-contact">
+                    <p><strong>Instagram:</strong> <a href="https://instagram.com/rahiyaa._" target="_blank">rahiyaa._</a></p>
+                    <p><strong>Phone:</strong> 9738179004</p>
+                    <p><strong>Email:</strong> 25bcac51@kristujayanti.com</p>
+                </div>
+
+                <div class="footer-meta">
+                    <p>© 2026 Rahiya Kouser • Kristu Jayanti University</p>
+                </div>
+            </div>
+        </footer>
+
+        <button id="back-to-top" class="top-btn" title="Go to top">↑</button>
+
+    </div> <script src="script.js"></script>
+</body>
+</html>
