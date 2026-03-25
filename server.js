@@ -52,6 +52,7 @@ app.listen(PORT, () => {
 // Endpoint for the Contact Form
 app.post('/api/contact', (req, res) => {
     const { name, email, message } = req.body;
+    console.log("New Review Received:", req.body);
     const sql = `INSERT INTO messages (name, email, message) VALUES (?, ?, ?)`;
     
     db.run(sql, [name, email, message], function(err) {
